@@ -1,0 +1,10 @@
+.Hero-box{
+    display:flex;
+    background-color: rgb(8, 8, 53);
+    justify-content: space-around;
+    justify-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+
+}

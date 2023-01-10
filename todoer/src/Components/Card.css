@@ -1,0 +1,13 @@
+
+.Card{
+    background-color: red;
+    color:White;
+    flex-basis:200px;
+    
+    
+    text-align: center;
+}
+
+.Card > img{
+    width:100px;
+}
