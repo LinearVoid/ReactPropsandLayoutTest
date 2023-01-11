@@ -1,9 +1,9 @@
 
 import "./Card.css"
-function Card(){
+function Card(props){
     return(
         <div className = "Card">
-            <h1>Test</h1>
+            <h1>{props.name}</h1>
             <img src = "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"></img>
             <p>Test</p>
             <a></a>
