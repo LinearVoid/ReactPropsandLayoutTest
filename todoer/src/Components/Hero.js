@@ -1,42 +1,23 @@
 import Card from "./Card.js"
 import "./Hero.css"
+import {datas} from "./testdata/datas.js"
 function Hero(){
-    const datas =[
-        {
-            name:"Bob"
-            
 
-        },
-        {
-            name:"Jack"
-            
-
-        },
-        {
-            name:"Dave"
-            
-
-        },
-        {
-            name:"sally"
-            
-
-        }
-
-    ]
 
     return(
         
         <div className = "Hero-box">
-            {datas.map((dude) =>(
-                <Card name = {datas[dude].name}/>
+          
+          {
+          /*datas.map((user) =>{
+                return( <Card name = {datas[user].name}/> )
 
-            ))
-            
-            }
-
-            <Card name = "Yeet"/>
-            
+          })*/
+        }
+            {Object.keys(datas).map((key)=>(
+                <Card name = {datas[key].name} phrase = {datas[key].phrase} photo = {datas[key].photo} />
+            ))}
+          
         </div>
     )
 
